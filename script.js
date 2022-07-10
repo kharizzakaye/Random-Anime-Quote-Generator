@@ -12,7 +12,17 @@ async function fetchData() {
     }
     catch(err)
     {
-        console.error("Error found!",err);
+        console.error("Unable to generate quote!",err);
     }
 }
 fetchData();
+
+function copyQuoteText() {
+    var text = document.getElementById("quote").innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+}
