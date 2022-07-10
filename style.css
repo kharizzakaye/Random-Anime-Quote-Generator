@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300;1,400&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+
+blockquote {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+}
+
+
+.generate-button {
+    background-color: seagreen;
+    color: white;
+    border: none;
+    padding: 12px 15px 12px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#quote {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.blockquote-footer{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 25px;
+}
