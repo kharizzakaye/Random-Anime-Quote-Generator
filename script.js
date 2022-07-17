@@ -9,6 +9,7 @@ async function fetchData() {
         //document.getElementById("anime").innerHTML=record["anime"];
 
         document.getElementById("citeSource").innerHTML = record["character"] + ", " + record["anime"];
+        document.getElementById("copiedMessage").style.visibility = "hidden";
     }
     catch(err)
     {
@@ -25,4 +26,6 @@ function copyQuoteText() {
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
+
+    document.getElementById("copiedMessage").style.visibility = "visible";
 }
